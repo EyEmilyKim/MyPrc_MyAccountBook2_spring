@@ -18,3 +18,66 @@
 		padding: 2em;
 		color: blue;
 	}
+
+/* ---------- MyAccountBook1 에서 가져온 css ---------- */
+:root {
+/*     --text-color: #66bb6a;  */
+/*     --background-color: #ffffa8; */
+/*     --topbott-color: #fff176; */
+/*     --selectedMenu-color: #2e7d32; */
+/*     --hoverMenu-color: #ffb300; */
+/*     --selectedMenu-under: white; */
+/*     --hoverMenu-under: #ffffa8; */
+  
+    
+}
+/* //////////헤더 메뉴 //////////////// */
+	header {
+/* 	    background-color: var(--topbott-color); */
+/* 	    width:100%; */
+/* 	    min-height: 80px; */
+/* 	    padding: 1.2rem 0; */
+	    display: flex;
+	    justify-content: space-between;
+	    align-items: center;
+	}
+/* 	header .home { */
+/* 		color : var(--text-color); */
+/* 		margin : 0 2rem; */
+/* 	    font-size: 1.5rem; */
+/* 	    font-weight: 700; */
+/* 	} */
+/* 	header .home a { */
+/* 		color : var(--selectedMenu-color); */
+/* 	} */
+	header ul {
+	    display: flex;
+	    margin: 0 20px 0 0;
+	}
+	header ul li {
+	    list-style-type: none;
+	    margin-left: 1.5rem;
+	}
+/* //////////헤더 메뉴 //////////////// */
+
+	header ul li a {
+	    text-decoration: none;
+	    font-size: 1.2rem;
+	    font-weight: 800;
+	    padding-bottom: 5px;
+	    color: var(--text-color); 
+	}
+	header a:active {
+	    border-bottom: 5px solid var(--selectedMenu-under);
+	    color: var(--selectedMenu-color);
+	}
+	header a:hover {
+	    border-bottom: 5px solid var(--hoverMenu-under);
+	    color: var(--hoverMenu-color);
+	}
+	
+/* 	@media screen and (max-width:500px) { */
+/* 	    header{ */
+/* 	        flex-direction: column; */
+/* 	    } */
+/* 	}	 */

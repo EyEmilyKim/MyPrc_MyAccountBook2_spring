@@ -18,14 +18,14 @@
 	
 	<header>
 		<div id="home">
-			<h1>My 가계부 Ver2.</h1>
+			<a href="index"><h1>My 가계부 Ver2.</h1></a>
 		</div>
 		<div id="menu">
 			<ul>
-				<li>가계부 쓰기</li>
-				<li>가계부 보기</li>
-				<li>설정</li>
-				<li>로그인/아웃</li>
+				<li><a href="#tran/add">가계부 쓰기</a></li>
+				<li><a href="#tran/list">가계부 보기</a></li>
+				<li><a href="set">설정</a></li>
+				<li><a href="#member">로그인/아웃</a></li>
 			</ul>
 		</div>
 	</header>
