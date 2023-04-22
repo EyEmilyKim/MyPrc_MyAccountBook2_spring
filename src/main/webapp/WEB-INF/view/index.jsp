@@ -20,23 +20,25 @@
 		<div id="home">
 			<a href="index"><h1>My 가계부 Ver2.</h1></a>
 		</div>
-		<div id="menu">
+		<nav id="menu">
 			<ul>
 				<li><a href="#tran/add">가계부 쓰기</a></li>
 				<li><a href="#tran/list">가계부 보기</a></li>
 				<li><a href="set/category/list">설정</a></li>
 				<li><a href="#logIO">로그인/아웃</a></li>
 			</ul>
-		</div>
+		</nav>
 	</header>
 	
 	<!----------- main 부분 ----------->
 	
+	<section>
 	<div id="main">
 		<h1>잘나오나 한번 봅시다~~</h1>
 		<img src="images/image.png" width="200px" />
 		<img src="images/ocean.jpg" width="200px" />
 	</div>
+	</section>
 	
 	<!----------- footer 부분 ----------->
 	
