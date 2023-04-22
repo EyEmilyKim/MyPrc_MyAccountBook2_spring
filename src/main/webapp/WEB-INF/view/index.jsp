@@ -8,6 +8,8 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 
+	<link href="css/index.css" rel="stylesheet" />
+	
 </head>
 
 <body>
@@ -32,6 +34,8 @@
 	
 	<div id="main">
 		<h1>잘나오나 한번 봅시다~~</h1>
+		<img src="images/image.png" width="200px" />
+		<img src="images/ocean.jpg" width="200px" />
 	</div>
 	
 	<!----------- footer 부분 ----------->

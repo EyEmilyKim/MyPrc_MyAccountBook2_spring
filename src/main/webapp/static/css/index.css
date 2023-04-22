@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+	header {
+			border: solid 1px red;
+			background-color: pink;
+			padding: 2em;
+			color: red;
+	}
+	#main {
+		border: solid 1px green;
+		background-color: yellow;
+		padding: 2em;
+		color: green;
+	}
+	footer {
+		border: solid 1px blue;
+		background-color: skyblue;
+		padding: 2em;
+		color: blue;
+	}
