@@ -8,24 +8,13 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 
+	<link href="../../css/reset.css" rel="stylesheet" />
 	<link href="../../css/index.css" rel="stylesheet" />
-	<style type="text/css">
-		aside {
-/* 			min-height: inherit; */
- 			min-height: initial; 
- 			display: block;
-			width: 20%;
-			float: left;
-			border: solid 1px orange;
-			background-color: lime;
-			padding: 2em;
-		}
-	</style>
 	
 </head>
 
 <body>
-
+	
 	<!----------- header 부분 ----------->
 	
 	<header>
@@ -42,26 +31,31 @@
 		</nav>
 	</header>
 	
-	<!----------- aside 부분 ----------->
 	
-	<aside>
-		<nav id="menu">
-			<ul>
-				<li><a href="#tran/add">카테고리 관리</a></li>
-				<li><a href="#tran/list">결제수단 관리</a></li>
-			</ul>
-		</nav>	
-	</aside>
+	<!----------- 가운데 몸통 부분 ----------->
+	<div id="middle">
 	
-	<!----------- main 부분 ----------->
+		<!----------- aside 부분 ----------->
+		
+		<aside>
+			<nav id="menu">
+				<ul>
+					<li><a href="#tran/add">카테고리 관리</a></li>
+					<li><a href="#tran/list">결제수단 관리</a></li>
+				</ul>
+			</nav>	
+		</aside>
+		
+		<!----------- main 부분 ----------->
+		
+		<section>
+		<div id="main">
+			<h1>여기 기본적으로 카테고리 목록이 떠야함니다~</h1>
+			<img src="../../images/image.png" width="200px" />
+		</div>
+		</section>
 	
-	<section>
-	<div id="main">
-		<h1>여기 기본적으로 카테고리 목록이 떠야함니다~</h1>
-		<img src="../../images/image.png" width="200px" />
 	</div>
-	</section>
-	
 	<!----------- footer 부분 ----------->
 	
 	<footer>
