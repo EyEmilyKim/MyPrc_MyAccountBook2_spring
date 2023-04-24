@@ -9,6 +9,6 @@ public class CategoryController {
 	
 	@RequestMapping("list")
 	public String list() {
-		return "set/category/list";
+		return "set.category.list";
 	}
 }

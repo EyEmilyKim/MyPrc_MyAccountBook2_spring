@@ -1,14 +1,30 @@
 @charset "UTF-8";
 
-/* ---------- MyAccountBook1 에서 가져온 css ---------- */
+/* ---------- header ---------- */
 :root {
-    --text-color: #66bb6a; 
-    --background-color: #ffffa8;
-    --topbott-color: #fff176;
-    --selectedMenu-color: #2e7d32;
-    --hoverMenu-color: #ffb300;
-    --selectedMenu-under: white;
-    --hoverMenu-under: #ffffa8;
+    --header-text-color: #66bb6a; 
+    --header-hoverMenu-color: #ffb300;
+    --header-hoverMenu-under: #ffffa8;
+    --header-selectedMenu-color: white;
+    --header-selectedMenu-under: #2e7d32;
+}
+
+/* ---------- aside ---------- */
+:root {
+    --aside-text-color: #ffb300; 
+    --aside-hoverMenu-color: #66bb6a;
+    --aside-hoverMenu-under: #2e7d32;
+    --aside-selectedMenu-color: white;
+    --aside-selectedMenu-under: #2e7d32;
+}
+
+/* ---------- footer ---------- */
+:root {
+    --footer-text-color: #66bb6a; 
+    --header-hoverMenu-color: #ffb300;
+    --header-hoverMenu-under: #ffffa8;
+    --header-selectedMenu-color: white;
+    --header-selectedMenu-under: #2e7d32;
 }
 
 /* ---------- layout 확인용 보더&컬러 ---------- */
@@ -18,7 +34,7 @@ header{
 }
 #middle{
 	border: solid 1px blue;
-		background-color: skyblue;
+	background-color: skyblue;
 }
 aside{
 	border: solid 1px orange;
