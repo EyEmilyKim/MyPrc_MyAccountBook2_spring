@@ -7,3 +7,48 @@
 		padding: 2em;
 		margin: auto;
 	}
+	
+	main .contMain { 
+		min-width:500px; 
+		min-height:300px; 
+		background-color: white; 
+		text-align:center; 
+		padding:20px; 
+		border-radius: 15px;
+	} 
+	main .title {
+		font-size: 20px;
+		font-weight: bold;
+		margin: 10px 0 20px; 
+ 		color:var(--header-hoverMenu-color); 
+	}
+	main .count {
+		margin: 10px 0 20px; 
+	}
+
+	main .id, .seqno, .cate_code { display:none; }
+
+main .table {
+		margin: auto;
+		min-width:400px;
+	} 
+main tr {height : 25px; }
+main .btn {
+	display: block;
+    border: 1px solid var(--main-selectedMenu-color);
+    font-size: 0.8rem;
+    font-weight: 400; 
+    padding: 0.1rem 0;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--main-background-color);
+    color: var(--main-text-color);
+}
+main .add { 
+	height:1.5rem;
+	margin:10px;
+	font-size: 1rem;
+    font-weight: 400; 
+    text-align: center;
+}

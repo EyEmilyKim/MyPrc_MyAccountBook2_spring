@@ -1,5 +1,13 @@
 @charset "UTF-8";
 
+	.border { border: solid darkgray 1px; }
+	.borderBlue { border: solid red 1px; }
+	.borderRed { border: solid red 1px; }
 	.margin-bot{
 		margin-bottom: 1rem;
 	}
+	
+	.hidden { display:none; }
+	#in { color:blue; } 
+	#ex { color:red; } 
+	#sys { background-color:beige; }

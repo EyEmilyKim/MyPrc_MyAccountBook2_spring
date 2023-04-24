@@ -5,7 +5,7 @@
     --header-text-color: #66bb6a; 
     --header-hoverMenu-color: #ffb300;
     --header-hoverMenu-under: #ffffa8;
-    --header-selectedMenu-color: white;
+    --header-selectedMenu-color: beige;
     --header-selectedMenu-under: #2e7d32;
 }
 
@@ -14,8 +14,18 @@
     --aside-text-color: #ffb300; 
     --aside-hoverMenu-color: #66bb6a;
     --aside-hoverMenu-under: #2e7d32;
-    --aside-selectedMenu-color: white;
+    --aside-selectedMenu-color: beige;
     --aside-selectedMenu-under: #2e7d32;
+}
+
+/* ---------- main ---------- */
+:root {
+    --main-text-color: #ffb300;
+    --main-background-color: #c7f1de;
+    --main-hoverMenu-color: #66bb6a;
+    --main-hoverMenu-under: #2e7d32;
+    --main-selectedMenu-color: beige;
+    --main-selectedMenu-under: #2e7d32;
 }
 
 /* ---------- footer ---------- */
@@ -23,7 +33,7 @@
     --footer-text-color: #66bb6a; 
     --header-hoverMenu-color: #ffb300;
     --header-hoverMenu-under: #ffffa8;
-    --header-selectedMenu-color: white;
+    --header-selectedMenu-color: beige;
     --header-selectedMenu-under: #2e7d32;
 }
 
