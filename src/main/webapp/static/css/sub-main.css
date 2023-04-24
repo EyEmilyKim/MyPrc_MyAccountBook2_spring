@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+	main {
+		float: right;
+		width: 80%;
+		min-height: 500px;
+		padding: 2em;
+		margin: auto;
+	}

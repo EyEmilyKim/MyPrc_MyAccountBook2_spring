@@ -8,12 +8,12 @@
 	<meta charset="UTF-8">
 	<title>Insert title here</title>
 
-	<link href="../../css/reset.css" rel="stylesheet" />
-	<link href="../../css/index.css" rel="stylesheet" />
+	<link href="../../css/set/rayout.css" rel="stylesheet" />
 	
 </head>
 
-<body>
+<body onload="startClock()">
+<script src="../../js/clock.js"></script>
 	
 	<!----------- header 부분 ----------->
 	
@@ -48,18 +48,19 @@
 		
 		<!----------- main 부분 ----------->
 		
+		<main>
 		<section>
-		<div id="main">
 			<h1>여기 기본적으로 카테고리 목록이 떠야함니다~</h1>
 			<img src="../../images/image.png" width="200px" />
-		</div>
 		</section>
+		</main>
 	
 	</div>
 	<!----------- footer 부분 ----------->
 	
 	<footer>
 		<h1>All Right Reserved.2023 EyEmilyKim</h1>
+		<span>지금은... <span id="clock"></span></span>
 	</footer>
 
 </body>
