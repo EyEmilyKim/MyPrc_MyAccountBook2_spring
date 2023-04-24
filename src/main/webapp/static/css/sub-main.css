@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 	main {
+		background-color: var(--main-background-color);
 		float: right;
 		width: 80%;
 		min-height: 500px;
@@ -30,7 +31,8 @@
 
 main .table {
 		margin: auto;
-		min-width:400px;
+		padding: 10px;
+		min-width: 400px;
 	} 
 main tr {height : 25px; }
 main .btn {
@@ -42,7 +44,7 @@ main .btn {
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    background-color: var(--main-background-color);
+    background-color: var(--aside-background-color);
     color: var(--main-text-color);
 }
 main .add { 

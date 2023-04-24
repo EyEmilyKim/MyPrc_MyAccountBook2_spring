@@ -1,18 +1,21 @@
 @charset "UTF-8";
 
 	header {
+		background-color: var(--header-background-color);
 		margin: auto;	/* header의 양쪽 여백(margin) 동등하게 -> 수평가운데정렬 */
 		justify-content: space-between; /* 가로축 정렬: 요소들 사이 동일 간격 */
 	    align-items: center;	/* 세로축 정렬: 가운데 */
-		height: 80px;
+		min-height: 80px;
 		width: 100%;
 		display: flex;
 		position: fixed; top: 0;	/* 스크롤시 헤더 고정 */
-		padding: 2em;
+		padding: 1.5em;
 	}
 	
 	header h1 {
-		color: var(--header-text-color); 
+		color: var(--header-text-color);
+		font-size: 1.5rem;
+		font-weight: 800;
 	}
 
 	header ul {

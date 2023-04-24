@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
 	aside {
+		background-color: var(--aside-background-color);
 		min-height: inherit;
 		float: left;
 		width: 20%;

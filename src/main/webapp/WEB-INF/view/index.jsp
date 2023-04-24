@@ -3,7 +3,7 @@
 
 <main>
 	<section>
-		<h1 class="margin-bot">잘나오나 한번 봅시다~~</h1>
+		<h1 class="margin-bot">스프링으로 만들어보는 My가계부2 ~♪</h1>
 		<div><img src="images/ocean.jpg" width="200px" /></div>
 		<div><img src="images/image.png" width="200px" /></div>
 	</section>
