@@ -42,7 +42,7 @@
 				<c:if test="${c.inex == 'EX' }"><td id="ex">지출</td><td>${c.cate_name }</td></c:if>
 				<td><a class="btn" href="${urlUpd }" onClick="popupUpd(this); return false;">수정</a></td>
 				<td><a class="btn" href="${urlDel }" onClick="popupDel(this); return false;">삭제</a></td>
-				<td class="">url : <c:out value="${urlDel }"></c:out></td>
+				<td class="">url : <c:out value="${urlUpd}"></c:out></td>
 			</tr>
 	    </c:otherwise>
 	  </c:choose>

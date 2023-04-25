@@ -74,8 +74,19 @@ public class JdbcCategoryService implements CategoryService {
 
 	@Override
 	public int update(Category c) {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("CateService > upd() called");
+		String sql = "update MAB_CATEGORIES"
+				+ " set CATE_NAME = ?"
+				+ " where 1=1 "
+				+ " and CATE_CODE = ?"
+				;
+		try {
+			int flag = template.update(sql, c.getCate_name(), c.getCate_code());
+			return flag;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
 	}
 
 	@Override

@@ -64,6 +64,37 @@ public class CategoryController {
 		return "redirect";
 	}
 	
+	@GetMapping("upd")
+	public String upd(String CCODE, @RequestParam(name="ID", defaultValue="master", required=false)String ID, Model model) {
+		System.out.println("CategoryController > upd()@Get called");
+		Category cate = categoryService.select(CCODE);
+		System.out.println(cate.getCate_code());
+		System.out.println(cate.getCate_name());
+		model.addAttribute("C", cate);
+		List<Category> list = categoryService.getList(ID);
+		model.addAttribute("LIST", list);
+		return "set.category.upd";
+	}
+	@PostMapping("upd")
+	public String updPost(String CCODE, String N_CNAME, Model model) {
+		System.out.println("CategoryController > upd()@Post called");
+		Category cate = new Category();
+		cate.setCate_code(CCODE);
+		cate.setCate_name(N_CNAME);
+		System.out.println(cate.getCate_code());
+		System.out.println(cate.getCate_name());
+		int flag = categoryService.update(cate);
+		System.out.println("flag : "+flag);
+		if(flag==0) {
+			model.addAttribute("msg", failMsg);
+			model.addAttribute("url", nextUrl);
+		}else {
+			model.addAttribute("msg", succMsg);
+			model.addAttribute("url", nextUrl);
+		}
+		return "redirect";
+	}
+	
 	@GetMapping("del")
 	public String del(String CCODE, Model model) {
 		System.out.println("CategoryController > del()@Get called");

@@ -45,11 +45,21 @@
 		min-width: 200px;
 	} 
 	main .item {
-		display: flex;
+		display: float;
 		justify-content: center;
+		border: solid 1px blue;
+		margin: 0 0 10px;
 	}
 	main .item div {
-		margin: 20px 10px 20px;
+		margin: 5px 10px 5px;
+		border: solid 1px green;
+	}
+	#guide {
+		color: red;
+	}
+	main .buttons {
+		margin: 20px 0 0;
+		border: solid 1px orange;
 	}
 	main .btn {
 		display: float;
