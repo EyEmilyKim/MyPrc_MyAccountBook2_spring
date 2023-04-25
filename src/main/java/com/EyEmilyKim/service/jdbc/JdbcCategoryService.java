@@ -97,7 +97,7 @@ public class JdbcCategoryService implements CategoryService {
 				+ " and CATE_CODE = \'"+cate_code+"\'"
 				;
 		try {
-			int flag = template.queryForObject(sql, Integer.class);
+			int flag = template.update(sql);
 			return flag;
 		} catch (Exception e) {
 			e.printStackTrace();
