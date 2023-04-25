@@ -4,8 +4,8 @@
 <aside>
 	<nav id="menu">
 		<ul>
-			<li><a href="#tran/add">카테고리 관리</a></li>
-			<li><a href="#tran/list">결제수단 관리</a></li>
+			<li><a href="/set/category/list">카테고리 관리</a></li>
+			<li><a href="#/set/method/list">결제수단 관리</a></li>
 		</ul>
 	</nav>
 </aside>

@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
 
 import com.EyEmilyKim.entity.Category;
@@ -69,14 +68,27 @@ public class JdbcCategoryService implements CategoryService {
 
 	@Override
 	public int delete(String cate_code) {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("Service > del() called");
+		String sql = "delete from MAB_CATEGORIES"
+				+ " where 1=1 "
+				+ " and CATE_CODE = \'"+cate_code+"\'"
+				;
+		try {
+			int flag = template.queryForObject(sql, Integer.class);
+			return flag;
+		} catch (Exception e) {
+			return 0;
+		}
 	}
 
 	@Override
 	public Category select(String cate_code) {
-		// TODO Auto-generated method stub
-		return null;
+		String sql = "select * from MAB_CATEGORIES"
+				+ " where 1=1 "
+				+ " and CATE_CODE = \'"+cate_code+"\'"
+				;
+		Category cate = template.queryForObject(sql, new BeanPropertyRowMapper<Category>(Category.class));
+		return cate;
 	}
 
 }
