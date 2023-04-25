@@ -6,7 +6,7 @@
 	<section class="contMain">
 	
 		<h2 class="title border">카테고리 목록</h2>
-		<div class="count border">총 ${SIZE } 건</div>
+		<div class="count border">총 <span class="cnt">${COUNT }</span> 건</div>
 	
 	<table class="table borderRed">
 	<thead class="">

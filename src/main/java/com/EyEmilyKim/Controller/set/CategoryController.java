@@ -21,6 +21,8 @@ public class CategoryController {
 	public String list(Model model) {
 		List<Category> list = categoryService.getList("master");
 		model.addAttribute("LIST", list);
+		int cnt = categoryService.getCount("master");
+		model.addAttribute("COUNT", cnt);
 		return "set.category.list";
 	}
 }
