@@ -23,6 +23,7 @@ public class JdbcCategoryService implements CategoryService {
 	
 	@Override
 	public List<Category> getList(String id) {
+		System.out.println("CateService > getList() called");
 		String sql = "select * from MAB_CATEGORIES"
 				+ " where 1=1 "
 				+ " and ID in (\'"+id+"\', \'system\')"
@@ -40,6 +41,7 @@ public class JdbcCategoryService implements CategoryService {
 
 	@Override
 	public int getCount(String id) {
+		System.out.println("CateService > getCount() called");
 		String sql = "select count(*) from MAB_CATEGORIES"
 				+ " where 1=1 "
 				+ " and ID in (\'"+id+"\', \'system\')"
@@ -50,14 +52,24 @@ public class JdbcCategoryService implements CategoryService {
 
 	@Override
 	public Integer getSeqno() {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("CateService > getSeqno() called");
+		String sql = "select max(SEQNO) from MAB_CATEGORIES"
+				;
+		int seqno = template.queryForObject(sql, Integer.class);
+		return seqno;
 	}
 
 	@Override
 	public int insert(Category c) {
-		// TODO Auto-generated method stub
-		return 0;
+		System.out.println("CateService > insert() called");
+		String sql = "insert into MAB_CATEGORIES values(?,?,?,?,?)";
+		try {
+			int flag = template.update(sql, c.getSeqno(),c.getInex(),c.getCate_name(),c.getCate_code(),c.getId());
+			return flag;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return 0;
+		}
 	}
 
 	@Override
@@ -68,7 +80,7 @@ public class JdbcCategoryService implements CategoryService {
 
 	@Override
 	public int delete(String cate_code) {
-		System.out.println("Service > del() called");
+		System.out.println("CateService > del() called");
 		String sql = "delete from MAB_CATEGORIES"
 				+ " where 1=1 "
 				+ " and CATE_CODE = \'"+cate_code+"\'"
@@ -77,6 +89,7 @@ public class JdbcCategoryService implements CategoryService {
 			int flag = template.queryForObject(sql, Integer.class);
 			return flag;
 		} catch (Exception e) {
+			e.printStackTrace();
 			return 0;
 		}
 	}
