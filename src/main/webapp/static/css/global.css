@@ -4,7 +4,7 @@
 	.borderBlue { border: solid red 1px; }
 	.borderRed { border: solid red 1px; }
 	.margin-bot{
-		margin-bottom: 1rem;
+		margin-bottom: 0.5rem;
 	}
 	
 	.hidden { display:none; }
